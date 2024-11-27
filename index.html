@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mi App</title>
+    <script>
+        function mostrarFechaHora() {
+            const ahora = new Date();
+            const fechaHora = ahora.toLocaleString(); // Fecha y hora formateada
+            document.getElementById('fecha-hora').textContent = fechaHora;
+        }
+        window.onload = mostrarFechaHora; // Ejecutar la función al cargar la página
+    </script>
+</head>
+<body>
+    <h1>Hola, mi app</h1>
+    <p>La fecha y hora actual es: <span id="fecha-hora"></span></p>
+</body>
+</html>
